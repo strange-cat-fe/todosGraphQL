@@ -1,4 +1,3 @@
-const express = require('express');
 const path = require('path');
 const sequelize = require('./utils/database');
 
@@ -6,7 +5,7 @@ const graphqlHTTP = require('express-graphql');
 const schema = require('./graphql/schema');
 const resolver = require('./graphql/resolver');
 
-const app = express();
+const app = require('express')();
 
 const PORT = process.env.PORT || 5000;
 
