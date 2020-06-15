@@ -30,7 +30,7 @@ async function start() {
     await sequelize.sync();
     app.listen(PORT);
   } catch (e) {
-    console.log(e);
+    console.log('you are gay');
   }
 }
 
